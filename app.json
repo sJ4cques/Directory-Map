@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Hungry Dragon",
+    "slug": "HungryD1",
+    "version": "1.0.14",
+    "orientation": "portrait",
+    "icon": "./assets/bluedrag.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.j4cques.HungryD1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/bluedrag.png"
+      },
+      "package": "com.j4cques.HungryD1"
+    },
+    "web": {
+      "favicon": "./assets/bluedrag.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "26d4f4fd-f6b2-4e30-a4b5-4525f132ea12"
+      }
+    }
+  }
+}
