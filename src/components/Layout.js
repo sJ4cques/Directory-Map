@@ -1,4 +1,4 @@
-import { StyleSheet, View, Dimensions, StatusBar, FlatList } from 'react-native'
+import { StyleSheet, View, Dimensions, StatusBar, ScrollView, Text } from 'react-native'
 import React from 'react'
 import Local from './Local'
 import IconV from './Icon'
@@ -10,10 +10,19 @@ var width = Dimensions.get("window").width
 const Layout = () => {
   
   return (
+    <View>
+      <StatusBar backgroundColor='skyblue' />
+
+    <ScrollView horizontal={true}    style={styles.roll} >
+
+        <View style={styles.vecino}>
+          
+        </View>
+
         <View style={styles.container}>
 
-          <StatusBar backgroundColor='skyblue' />
-
+          
+          
             <Local 
               titleText={'T 1'}
               position={styles.Tienda1}
@@ -662,7 +671,12 @@ const Layout = () => {
               textTitleModal={'HUNGRY DRAGON'}
             />
 
+        
+        </View>
 
+        
+
+        </ScrollView>
         </View>
     )
 }
@@ -677,6 +691,17 @@ const styles = StyleSheet.create({
       flexDirection:'row',
       alignSelf:'center',
       flexWrap: 'wrap'
+    },
+
+    roll:{
+      
+    },
+
+    vecino:{
+      backgroundColor: 'grey',
+      height: height * 0.9,
+      width: width *0.3,
+      marginTop: StatusBar.currentHeight || 0
     },
 
 
@@ -1406,12 +1431,12 @@ const styles = StyleSheet.create({
     },
 
     Tienda60:{
-      left: width * -0.09,
+      left: width * -0.27,
       top: height * 0.685,
       position: 'absolute'
     },
     Tienda60T:{
-      width: width * 0.125,
+      width: width * 0.3,
       height: height * 0.2
     },
 

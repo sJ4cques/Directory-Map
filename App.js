@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ImageBackground, SafeAreaView, Image } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import Layout from './src/components/Layout'
 
@@ -12,7 +12,7 @@ export default function App() {
     <View style={styles.container} >
       
     <Layout />
-
+    
     </View>
   )
 }
