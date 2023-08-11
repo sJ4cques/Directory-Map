@@ -1,6 +1,9 @@
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
-import Layout from './src/components/Layout'
+import Layout from './src/Screens/Layout'
+import Login from './src/Screens/auth/Login'
+import { NavigationContainer } from '@react-navigation/native'
+import AuthNavigator from './src/navigations/AuthNavigator'
 
 // <Image source={require('./assets/waifu.jpg')} />
 
@@ -9,11 +12,10 @@ import Layout from './src/components/Layout'
 export default function App() {
   return (
 
-    <View style={styles.container} >
-      
-    <Layout />
-    
+    <View style = {{flex:1}}>
+      <AuthNavigator />
     </View>
+    
   )
 }
 

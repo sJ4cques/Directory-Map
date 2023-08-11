@@ -1,7 +1,7 @@
 import { StyleSheet, View, Dimensions, StatusBar, ScrollView, Text } from 'react-native'
 import React from 'react'
-import Local from './Local'
-import IconV from './Icon'
+import Local from '../components/Local'
+import IconV from '../components/Icon'
 
 
 var height = Dimensions.get("window").height
