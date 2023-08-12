@@ -14,7 +14,13 @@ function AuthNavigator() {
     <NavigationContainer>
       <StatusBar backgroundColor='skyblue' />
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={Login} />
+            <Stack.Screen name="Home" component={Login} 
+                options={() => ({
+                headerTintColor: 'skyblue',
+                headerBackTitleVisible: false,
+              })}
+            
+            />
 
             <Stack.Screen name="Pass" component={ForgotPassword} 
               options={() => ({
@@ -27,7 +33,16 @@ function AuthNavigator() {
               })}
             
             />
-            <Stack.Screen name="Registro" component={Register} />
+            <Stack.Screen name="Registro" component={Register} 
+                options={() => ({
+                headerTintColor: 'skyblue',
+                headerBackTitleVisible: false,
+                headerTitle: 'Back'
+              })}
+            
+            
+            />
+
         </Stack.Navigator>
     </NavigationContainer>
   );

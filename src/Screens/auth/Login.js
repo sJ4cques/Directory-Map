@@ -20,13 +20,16 @@ const Login = ({ navigation }) => {
 
 
       <Pressable style={styles.BtnGeneral2}
-      onPress = { () => {
+          onPress = { () => {
           navigation.navigate ('Pass')
       }} >
         <Text>Forgot Password?</Text>
       </Pressable>
 
-      <Pressable style={styles.BtnGeneral}>
+      <Pressable  style={styles.BtnGeneral}
+          onPress = { () => {
+          navigation.navigate ('Registro')
+      }} >
         <Text>Register</Text>
       </Pressable>
 
